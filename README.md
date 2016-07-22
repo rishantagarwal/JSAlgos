@@ -1,1 +1,1 @@
-JS Algos
+JS Algorithms for Practice
