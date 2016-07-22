@@ -4,7 +4,7 @@ function node(val){
 	this.right = null;
 }
 
-function BST(){
+function binaryTree(){
 	this.root = null;
 	this.size = 0;
 	
@@ -34,7 +34,7 @@ queue.prototype.remove = function(val){
 	this.unshift();
 }
 
-BST.prototype.push = function(val){
+binaryTree.prototype.push = function(val){
 	
 	var root = this.root;
 	
@@ -70,7 +70,7 @@ BST.prototype.push = function(val){
 
 }
 
-BST.prototype.search = function(val){
+binaryTree.prototype.search = function(val){
 	var root = this.root;
 	var current = root;
 	
@@ -87,11 +87,11 @@ BST.prototype.search = function(val){
 	return false;
 }
 
-BST.prototype.inOrderTravel = function(){
+binaryTree.prototype.inOrderTravel = function(){
 	
 } 
 
-var tree = new BST();
+var tree = new binaryTree();
 tree.push(10);
 tree.push(4);
 tree.push(11);
