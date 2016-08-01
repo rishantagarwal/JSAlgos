@@ -1,4 +1,4 @@
-var grid=["gr.","bg.","..."];
+var grid=["..",".."];
 
 function strokesCount(grid){
   // returns strokes count of one colour in  grid
