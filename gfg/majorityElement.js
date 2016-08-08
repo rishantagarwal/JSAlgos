@@ -28,9 +28,28 @@ function majorityElementHashMap(arr){
     }
     else map.set(key,1);
   };
-  
+
 
   return false;
+}
+
+//O(n) O(1)approach
+// Moore voting algo
+function method3(arr){
+  var majIndex=0,count=1;
+  for(var index in arr){
+    if(arr[index]==arr[majIndex]){count++;}
+    else count--;
+    if(count==0){majIndex = index;count=1;}
+  }
+
+  count=0;
+  for(var index of arr){
+    if(index == arr[majIndex]){count++;}
+  }
+
+  if(count > Math.floor(arr.length/2)){return arr[majIndex];}
+  else return false;
 }
 
 
@@ -41,3 +60,8 @@ console.timeEnd("NlogN");
 console.time("N");
 console.log(majorityElementHashMap(arr));
 console.timeEnd("N");
+
+
+console.time("O(n)O(1)approach");
+console.log(method3(arr));
+console.timeEnd("O(n)O(1)approach");
