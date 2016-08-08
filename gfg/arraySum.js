@@ -47,5 +47,9 @@ function getResultHashMap(arr,sum){
   return(result[0]);
 }
 
+console.time("NlogN");
 console.log(getResult(arr,num));
+console.timeEnd("NlogN");
+console.time("N");
 console.log(getResultHashMap(arr,num));
+console.timeEnd("N");
