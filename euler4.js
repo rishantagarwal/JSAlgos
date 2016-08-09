@@ -8,7 +8,7 @@ function processData(input){
 }
 
 function result2(n){
-
+  var high,
 
 
 }
