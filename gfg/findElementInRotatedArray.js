@@ -1,6 +1,8 @@
 // http://www.geeksforgeeks.org/find-the-missing-number/
 // Assuming array has been rotated in Clockwise order
 // [5,4,3,2,1] becomes [2,1,5,4,3]
+
+/// Solution works in O(n) worst case and is useless
 var arr = [2,1,5,4,3];
 
 function getResult(arr,num){
@@ -26,7 +28,7 @@ function getResult(arr,num){
      else if(num < arr[n-1]){low = 0; high = pivot;}
    }
 
-   console.log(isIncreasing);
+  //  console.log(isIncreasing);
 
   return binarySearch(arr,low,high,num,isIncreasing);
 }
